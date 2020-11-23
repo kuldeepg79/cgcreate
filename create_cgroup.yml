@@ -1,0 +1,6 @@
+---
+- hosts: localhost
+  become: true
+  tasks:
+    - name: Create cgroup
+      raw: cgcreate -a matthew:matthew -t matthew:matthew -g cpuacct,memory,pids:ansible-runner 
