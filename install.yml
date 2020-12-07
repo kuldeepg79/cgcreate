@@ -1,9 +1,9 @@
 ---
-- name: Install httpd
+- name: Install vsftpd
   hosts: localhost
   tasks:
-    - name: Install httpd
+    - name: Install vsftpd
       yum:
-        name: httpd
+        name: vsftpd
         state: latest
 ...        
